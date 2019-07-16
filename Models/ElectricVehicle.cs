@@ -2,7 +2,7 @@ using System;
 
 namespace Inheritance
 {
-    public class ElectricVehicle : Vehicle
+    public class ElectricVehicle : Vehicle, IChargeable
     {
         public double BatteryKWh { get; set; }
 

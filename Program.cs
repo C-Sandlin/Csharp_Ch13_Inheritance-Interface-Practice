@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Inheritance
 {
@@ -44,6 +45,29 @@ namespace Inheritance
             tesla.Drive();
 
             tesla.Facts();
+
+            // INTERFACES
+
+            Zero fxs = new Zero();
+            Zero fx = new Zero();
+            Tesla ModelS = new Tesla();
+
+            List<IChargeable> ElectricTransports = new List<IChargeable>()
+            {
+                fxs, fx, ModelS
+            };
+
+            Cessna myCessna = new Cessna();
+            Cessna yourCessna = new Cessna();
+            Ram myRam = new Ram();
+
+            List<IRefuelable> GasTransports = new List<IRefuelable>()
+            {
+                myCessna, yourCessna, myRam
+            };
+
+
+
         }
     }
 }
